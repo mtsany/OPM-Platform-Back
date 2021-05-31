@@ -1,11 +1,19 @@
 const express = require('express')
-const app = express()
-const port = 3000
+const server = express()
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+const port = 8080
+
+let counter = 0
+const getRequest = (request, response) => {
+  counter++
+  response.send(counter + "")
+}
+
+server.get('/', getRequest)
+
+server.post("/", (req, res)=> {
+  console.log(req.body)
 })
-
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
