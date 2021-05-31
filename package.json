@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Back-end\r Use Node.js + Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtsany/OPM-Platform-Back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtsany/OPM-Platform-Back/issues"
+  },
+  "homepage": "https://github.com/mtsany/OPM-Platform-Back#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
